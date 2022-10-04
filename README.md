@@ -11,9 +11,9 @@ Main features that will be implemented on the website :
 
 ## Contributors :
 
-1. Bayu Satrio Wibowo ([Bayu](https://github.com/baysatriow))
+1. Eric Pradana ([Eric](https://github.com/ericprd))
 2. Ersan Karimi ([Ersan](https://github.com/ersankarimi))
-3. Eric Pradana ([Eric](https://github.com/ericprd))
+3. Bayu Satrio Wibowo ([Bayu](https://github.com/baysatriow)) 
 4. Denny Setyawan Huda ([Denny](https://github.com/dennyshuda))
 
 ## Design and Links
