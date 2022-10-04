@@ -39,7 +39,7 @@ const addNewQuestion = async (event) => {
     text: formData.get("text"),
   };
 
-  const response = await fetch(`${BACKEND_URL}`, {
+  const response = await fetch(`${BACKEND_URL}/Questions`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newQuestion),
