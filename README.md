@@ -20,7 +20,7 @@ Main features that will be implemented on the website :
 
 Figma : -
 
-Live : -
+Live : kepo.baysatriow.me
 
 ## REST API Endpoints
 
