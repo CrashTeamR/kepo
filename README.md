@@ -26,11 +26,9 @@ Live : -
 
 URL: `https://api.kontenbase.com/query/api/v1/2fe1b8dd-1b6f-4e91-b884-65382fb84354`
 
-| HTTP   | Endpoint              | Description    |
-| ------ | --------------------- | -------------- |
-| GET    | `/question?$lookup=*` | Get all posts  |
-| POST   | `/question`           | Create post    |
-| PATCH  | `/question/:id`       | Edit post      |
-| DELETE | `/question/:id`       | Delete post    |
-| POST   | `/question`           | Create comment |
-| PATCH  | `/question/:id`       | Edit comment   |
+| HTTP   | Endpoint              | Description   |
+| ------ | --------------------- | ------------- |
+| GET    | `/question?$lookup=*` | Get all posts |
+| POST   | `/question`           | Create post   |
+| PATCH  | `/question/:id`       | Edit post     |
+| DELETE | `/question/:id`       | Delete post   |
