@@ -2,8 +2,6 @@ const questionFormElement = document.getElementById("question-form");
 
 const questionResultElement = document.getElementById("questions-result");
 
-const questionFormElement = document.getElementById("question-form");
-
 const BACKEND_URL =
   "https://api.kontenbase.com/query/api/v1/2fe1b8dd-1b6f-4e91-b884-65382fb84354/Question";
 
@@ -36,12 +34,12 @@ const addNewQuestion = async (event) => {
   const formData = new FormData(event.target);
 
   const newQuestion = {
-    username: formData.get("username")
+    username: formData.get("username"),
     Title: formData.get("question-title"),
     question: formData.get("question-text"),
   };
 
-  const response = await fetch(`${BACKEND_API_URL}/questions`, {
+  const response = await fetch(`${BACKEND_URL}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newQuestion),
