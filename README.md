@@ -1,6 +1,6 @@
 # KEPO
 
-KEPO is a social media website that inspirated by _Stack Overflow_
+KEPO is a social media website that inspirated by _Stack Overflow_ and _Quora_
 
 ## Main Features :
 
@@ -18,7 +18,9 @@ Main features that will be implemented on the website :
 
 ## Design and Links
 
-Figma : -
+Figma : https://www.figma.com/file/LOzYffy9wwSK7lXTnMeXtW/KEPO.com
+
+Flowchart: https://www.figma.com/file/uVu0vBGyQL0QK0nZc96nNC/Flowchart
 
 Live : kepo.baysatriow.me
 
