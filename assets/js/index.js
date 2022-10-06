@@ -17,10 +17,15 @@ fetchQuestions();
 
 function displayQuestions(questions) {
   for (const index in questions) {
-    let questionElement = `<div>
-    <h1>Username: ${questions[index].username}<h1>
-    <p>Title: ${questions[index].title}</p>
-    <p>Question: ${questions[index].text}</p>
+    let questionElement = `<div class="question-item">
+    <div class="question-top">
+    <p>${questions[index].title}</p>
+    <p>${questions[index].text}</p>
+    </div>
+    <div class="question-bottom">
+    <button>Answers</button>
+    <h3>${questions[index].username}</h3>
+    </div>
     </div>`;
     questionResultElement.innerHTML += questionElement;
   }
