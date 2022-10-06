@@ -19,7 +19,7 @@ function displayQuestions(questions) {
   for (const index in questions) {
     let questionElement = `<div class="question-item">
     <div class="question-top">
-    <p>${questions[index].title}</p>
+    <h1>${questions[index].title}</h1>
     <p>${questions[index].text}</p>
     </div>
     <div class="question-bottom">
@@ -54,3 +54,13 @@ const addNewQuestion = async (event) => {
 };
 
 questionFormElement.addEventListener("submit", addNewQuestion);
+
+const askQuestion = document.getElementById("ask-question");
+
+const questionFormWrapperElement = document.querySelector(
+  ".question-form-wrapper"
+);
+
+function displayForm() {
+  questionFormWrapperElement.classList.toggle("question-form-wrapper-toggle");
+}
