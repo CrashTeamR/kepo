@@ -8,9 +8,9 @@
     <title>KEPO</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header z-50">
       <nav
-        class="nav py-4 px-4 drop-shadow-xl fixed top-0 right-0 left-0 bg-white sm:pr-[10rem] lg:pr-[20rem]"
+        class="nav py-4 px-4 drop-shadow-xl top-0 fixed right-0 left-0 bg-white sm:pr-[10rem] lg:pr-[20rem] z-50"
       >
         <div
           class="max-w-screen-xl flex justify-between sm:justify-around items-center relative left-[50%] -translate-x-[50%]"
@@ -32,8 +32,36 @@
           </div>
         </div>
       </nav>
-      aslkdhnajkls
     </header>
-    <script src="/assets/js/index.js"></script>
+
+    <main class="relative mt-28 h-screen z-10 flex items-center flex-col">
+      <section
+        class="w-[90%] lg:w-1/2 xl:w-[35%] sm:w-[80%] md:w-[70%] border-b-[1px] border-kp-gray-300"
+      >
+        <div class="flex justify-between">
+          <h1 class="font-bold text-2xl sm:text-[32px] text-kp-teal-400">
+            All Questions
+          </h1>
+
+          <button
+            type="button"
+            class="rounded bg-kp-teal-200 px-2 text-xs sm:px-5 py-1 text-white hover:bg-kp-teal-300 hover:outline-1 hover:outline-kp-green-100 outline transition-all ease-in duration-200 focus:ring-4 focus:ring-kp-green-100"
+          >
+            Ask Questions
+          </button>
+        </div>
+        <ul class="mt-12 mb-5">
+          <li class="font-semibold text-lg sm:text-xl text-kp-black-100">
+            Recent
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="all-questions-list"
+        class="w-[90%] lg:w-1/2 xl:w-[35%] sm:w-[80%] md:w-[70%] mt-8 flex flex-col items-center gap-4"
+      ></section>
+    </main>
+    <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>
