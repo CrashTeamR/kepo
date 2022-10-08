@@ -1,66 +1,12 @@
-const questionFormElement = document.getElementById("question-form");
+import { useState, useFetch, displayQuestions } from "./modules/index.js";
 
-const questionResultElement = document.getElementById("questions-result");
+const BACKEND_URL = "https://kepo-backend.ericprd.site/api/questions";
 
-const BACKEND_URL =
-  "https://api.kontenbase.com/query/api/v1/2fe1b8dd-1b6f-4e91-b884-65382fb84354";
+// Initialize questions state
+// Initial value is a promise based on the fetch request using useFetch function
+// If the promise is resolved, the value will be the questions object
+// And if the promise is rejected, the value will be an empty array
+const [questions, setQuestions] = useState(useFetch(BACKEND_URL));
 
-async function fetchQuestions() {
-  const response = await fetch(`${BACKEND_URL}/Questions`);
-  const questions = await response.json();
-
-  console.log(questions);
-  displayQuestions(questions);
-}
-
-fetchQuestions();
-
-function displayQuestions(questions) {
-  for (const index in questions) {
-    let questionElement = `<div class="question-item">
-    <div class="question-top">
-    <h1>${questions[index].title}</h1>
-    <p>${questions[index].text}</p>
-    </div>
-    <div class="question-bottom">
-    <button>Answers</button>
-    <h3>${questions[index].username}</h3>
-    </div>
-    </div>`;
-    questionResultElement.innerHTML += questionElement;
-  }
-}
-
-displayQuestions();
-
-const addNewQuestion = async (event) => {
-  event.preventDefault();
-
-  const formData = new FormData(event.target);
-
-  const newQuestion = {
-    username: formData.get("username"),
-    title: formData.get("title"),
-    text: formData.get("text"),
-  };
-
-  const response = await fetch(`${BACKEND_URL}/Questions`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(newQuestion),
-  });
-
-  fetchQuestions();
-};
-
-questionFormElement.addEventListener("submit", addNewQuestion);
-
-const askQuestion = document.getElementById("ask-question");
-
-const questionFormWrapperElement = document.querySelector(
-  ".question-form-wrapper"
-);
-
-function displayForm() {
-  questionFormWrapperElement.classList.toggle("question-form-wrapper-toggle");
-}
+// Show all questions from the results of questions (promise)
+displayQuestions(questions);
