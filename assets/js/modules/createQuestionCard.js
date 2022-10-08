@@ -30,23 +30,15 @@ export const createQuestionCard = ({
   username,
   comments,
   _id,
-  createdAt = "202210081500",
+  createdAt,
 }) => {
   const questionsCardListWrapper =
     document.getElementById("all-questions-list");
 
-  const postedSince = getDiffPublishedTime(
-    new Date(
-      createdAt.slice(0, 4),
-      Number(createdAt.slice(4, 6)) - 1,
-      createdAt.slice(6, 8),
-      createdAt.slice(8, 10),
-      createdAt.slice(10)
-    )
-  );
+  const postedSince = getDiffPublishedTime(new Date(Number(createdAt)));
 
   const questionCardElement = `
-  <div class="bg-kp-gray-100 flex flex-col w-full p-4 gap-12 rounded-lg hover:hidden" id=${_id}>
+  <div class="bg-kp-gray-100 flex flex-col w-full p-4 gap-12 rounded-lg" id=${_id}>
           <h2 class="text-kp-teal-400 text-lg sm:text-xl font-semibold w-full">
             ${title}
           </h2>
