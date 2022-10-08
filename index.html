@@ -21,12 +21,12 @@
             >
           </div>
           <div
-            class="nav-input w-fit relative right-0 sm:border-2 sm:w-3/5 py-2 px-3 rounded-md flex gap-5"
+            class="nav-input w-fit relative right-0 sm:border-2 sm:w-3/5 py-2 px-3 rounded-md flex gap-5 hover:outline hover:outline-kp-gray-200"
           >
             <img class="w-6" src="/assets/svg/search.svg" alt="search icon" />
             <input
               class="w-full focus:outline-none hidden sm:block"
-              type="text"
+              type="search"
               placeholder="search KEPO"
             />
           </div>
@@ -34,7 +34,9 @@
       </nav>
     </header>
 
-    <main class="relative mt-28 h-screen z-10 flex items-center flex-col">
+    <main
+      class="relative min-h-screen mt-28 z-10 flex items-center flex-col mb-12"
+    >
       <section
         class="w-[90%] lg:w-1/2 xl:w-[35%] sm:w-[80%] md:w-[70%] border-b-[1px] border-kp-gray-300"
       >
@@ -47,7 +49,7 @@
             type="button"
             class="rounded bg-kp-teal-200 px-2 text-xs sm:px-5 py-1 text-white hover:bg-kp-teal-300 hover:outline-1 hover:outline-kp-green-100 outline transition-all ease-in duration-200 focus:ring-4 focus:ring-kp-green-100"
           >
-            Ask Questions
+            <a href="/ask-question">Ask Questions</a>
           </button>
         </div>
         <ul class="mt-12 mb-5">
