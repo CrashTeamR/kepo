@@ -38,7 +38,7 @@ export const createQuestionCard = ({
   const postedSince = getDiffPublishedTime(new Date(Number(createdAt)));
 
   const questionCardElement = `
-  <div class="bg-kp-gray-100 flex flex-col w-full p-4 gap-12 rounded-lg" id=${_id}>
+  <div class="bg-kp-gray-100 flex flex-col w-full p-4 gap-12 rounded-lg shadow-xl" id=${_id}>
           <h2 class="text-kp-teal-400 text-lg sm:text-xl font-semibold w-full">
             ${title}
           </h2>
@@ -53,6 +53,7 @@ export const createQuestionCard = ({
 
             <div class="flex text-kp-teal-400 place-items-center gap-2">
               <h3 class="sm:text-sm text-[10px] font-semibold">${username}</h3>
+              <div class="w-[2px] block h-[15px] bg-gray-400"></div>
               <span class="text-normal text-[8px]">${postedSince}</span>
             </div>
           </div>
