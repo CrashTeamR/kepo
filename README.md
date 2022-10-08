@@ -26,11 +26,16 @@ Live : kepo.baysatriow.me
 
 ## REST API Endpoints
 
-URL: `https://api.kontenbase.com/query/api/v1/2fe1b8dd-1b6f-4e91-b884-65382fb84354`
+- `kepo-backend.ericprd.site/api/questions` GET method to get all questions in database.
+- `kepo-backend.ericprd.site/api/questions` POST method to post question to database
 
-| HTTP   | Endpoint              | Description   |
-| ------ | --------------------- | ------------- |
-| GET    | `/question?$lookup=*` | Get all posts |
-| POST   | `/question`           | Create post   |
-| PATCH  | `/question/:id`       | Edit post     |
-| DELETE | `/question/:id`       | Delete post   |
+  ### parameters schema
+
+  > username: String
+
+  > title: String
+
+  > question: string
+
+- `kepo-backend.ericprd.site/api/questions/:id` GET method to get question by id from database.
+- `kepo-backend.ericprd.site/api/questions/:id` DELETE method to get question by id from database.
