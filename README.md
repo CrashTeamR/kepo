@@ -28,11 +28,11 @@ Live : kepo.baysatriow.me
 
 - Home Page
 
-![Home Page](/assets/screenshoots/home.png)
+![Home Page](/assets/screenshots/home.png)
 
 - Ask Question Page
 
-![Ask Question Page](/assets/screenshoots/ask-question.png)
+![Ask Question Page](/assets/screenshots/ask-question.png)
 
 ## REST API Endpoints
 
