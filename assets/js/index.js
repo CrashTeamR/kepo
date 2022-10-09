@@ -1,6 +1,6 @@
 import { useState, useFetch, displayQuestions } from "./modules/index.js";
 
-const BACKEND_URL = "https://kepo-backend.ericprd.site/api/questions";
+const BACKEND_URL = "https://kepo-api.ericprd.site/api/questions";
 
 // Initialize questions state
 // Initial value is a promise based on the fetch request using useFetch function

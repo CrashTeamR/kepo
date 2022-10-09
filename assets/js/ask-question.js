@@ -13,16 +13,13 @@ formElement.addEventListener("submit", (event) => {
     content: contentInput.value,
   };
 
-  const request = new Request(
-    "https://kepo-backend.ericprd.site/api/questions",
-    {
-      method: "POST",
-      body: JSON.stringify(objectValue),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  const request = new Request("https://kepo-api.ericprd.site/api/questions", {
+    method: "POST",
+    body: JSON.stringify(objectValue),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 
   postQuestion(request);
 

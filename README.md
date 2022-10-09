@@ -36,8 +36,8 @@ Live : kepo.baysatriow.me
 
 ## REST API Endpoints
 
-- `kepo-backend.ericprd.site/api/questions` GET method to get all questions in database.
-- `kepo-backend.ericprd.site/api/questions` POST method to post question to database
+- `kepo-api.ericprd.site/api/questions` GET method to get all questions in database.
+- `kepo-api.ericprd.site/api/questions` POST method to post question to database
 
   ### parameters schema
 
@@ -47,5 +47,5 @@ Live : kepo.baysatriow.me
 
   > question: string
 
-- `kepo-backend.ericprd.site/api/questions/:id` GET method to get question by id from database.
-- `kepo-backend.ericprd.site/api/questions/:id` DELETE method to get question by id from database.
+- `kepo-api.ericprd.site/api/questions/:id` GET method to get question by id from database.
+- `kepo-api.ericprd.site/api/questions/:id` DELETE method to get question by id from database.
