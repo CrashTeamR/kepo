@@ -24,6 +24,16 @@ Flowchart: https://www.figma.com/file/uVu0vBGyQL0QK0nZc96nNC/Flowchart
 
 Live : kepo.baysatriow.me
 
+## Preview
+
+- Home Page
+
+![Home Page](/assets/screenshoots/home.png)
+
+- Ask Question Page
+
+![Ask Question Page](/assets/screenshoots/ask-question.png)
+
 ## REST API Endpoints
 
 - `kepo-backend.ericprd.site/api/questions` GET method to get all questions in database.
